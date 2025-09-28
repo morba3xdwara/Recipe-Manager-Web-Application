@@ -23,6 +23,6 @@ function goBackToHomePage(){
 }
 
 function homePageButtonRedirection(){
-    console,log("redirecting");
+    console.log("redirecting");
     window.location.href = "home.html";
 }

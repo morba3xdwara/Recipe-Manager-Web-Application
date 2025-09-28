@@ -7,8 +7,27 @@
 </head>
 <body>
     <h1>Here you can add new recipies</h1>
-    <button id="homeButton" type="button" onclick="goBackToHomePage()">Home page</button>
+
+    <h2>Add a recipie</h2>
+    <div id="nameDiv">
+        <input id="recipieName" placeholder="Enter recipie name">
+        <button onclick="submitting()">submit</button>
+    </div>
+    
+    <div id="addIngredientDiv">
+        <input id="ingredient" type="text" placeholder="Add ingredient">
+        <button onclick="addIngredientToList()">+</button>
+    </div>
+
+    <div>
+        <h3>ingredients</h3>
+        <ul id="ingredients list">
+        </ul>
+    </div>
+
+    <button id="homeButton" onclick="goBackToHomePage()">Home page</button>
     
     <script src="script.js"></script>
+    <script src="ARM.js"></script>
 </body>
 </html>
