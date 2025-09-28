@@ -1,5 +1,0 @@
-===add recipie to data base function ===
-user: writes recipie name -> writes ingredient -> clicks "+" button -> clicks "submit" button
-
-program: when "+" is clicked adds ingredient to the list and also stores it in list variable "ingredients" 
--> when "submit" is clicked takes the recipie name and the list of ingredients and store them in an object in list "recipies"
