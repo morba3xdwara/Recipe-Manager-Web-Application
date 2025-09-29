@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+    <meta charset="UTF-8">
+    <title>View Recipes</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="viewStyle.css">
+
+    </head>
+    <body>
+        <h1>Recipes you have</h1>
+
+        <div id="recipiesDiv">
+            <h3 class="empty">You have no Recipes<br>add one first</h3>
+            <button id="addButton" class="empty" onclick="addButtonListner()">Add Recipe</button>
+
+            <ul id="recipesList"></ul>
+        </div>
+
+        <div>
+            <button id="homeButton" onclick="goBackToHomePage()">Home page</button>
+        </div>
+
+        <script src="JavaScriptCodes/script.js"></script>
+        <script src="JavaScriptCodes/VRM.js"></script>
+    </body>
+</html>

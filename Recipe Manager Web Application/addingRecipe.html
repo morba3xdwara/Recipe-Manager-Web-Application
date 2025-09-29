@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Recipe Manager Adding Recipies</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="addingStyle.css">
+</head>
+<body>
+    <h1>Here you can add new recipes</h1>
+
+    <h2>Add a recipe</h2>
+    <div id="nameDiv">
+        <input id="recipeName" placeholder="Enter recipe name">
+        <button onclick="submitting()">✅</button>
+        <br><div id="invalidName">Invalid</div>
+    </div>
+    
+    <div id="addIngredientDiv">
+        <input id="ingredient" type="text" placeholder="Add ingredient">
+        <button onclick="addIngredientToList()">➕</button>
+        <br><div id="invalidIngredient">Invalid</div>
+    </div>
+
+    <div>
+        <h3>ingredients</h3>
+        <ul id="ingredients list">
+        </ul>
+    </div>
+
+    <div>
+    <button id="homeButton" onclick="goBackToHomePage()">Home page</button>
+    </div>
+    
+    <script src="JavaScriptCodes/script.js"></script>
+    <script src="JavaScriptCodes/ARM.js"></script>
+    <script type="module" src="JavaScriptCodes/dataStorage.js"></script>
+</body>
+</html>
