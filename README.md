@@ -26,5 +26,6 @@ Users can add ingredients, instructions, and tags, then store and manage their r
 
 ## 🧰 info
 
-I'm realy bad at css, i havent's started it yet.
-i may try little things, to try leaning.
+- I'm realy bad at css, i havent's started it yet.
+- i may try little things, to try leaning.
+- and the js code may have some problems.
