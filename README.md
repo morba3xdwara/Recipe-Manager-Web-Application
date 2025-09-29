@@ -1,4 +1,4 @@
-# Recipe Manager Web Application 🍲 (in progress)
+# Recipe Manager Web Application 🍲 (in progress) "I'm realy bad at css i havent's started it yet"
 
 A simple web app to create, view, edit, and delete recipes.  
 Users can add ingredients, instructions, and tags, then store and manage their recipes in an easy-to-use interface.
