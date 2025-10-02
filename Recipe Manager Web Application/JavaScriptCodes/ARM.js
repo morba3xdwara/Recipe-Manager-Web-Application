@@ -1,7 +1,10 @@
-//=== ADDING RECIPIES MECHANIC ===
+//=== ADDING RECIPES MECHANIC ===
 let ingredientsList = [];
 let recipes = [];
 
+//resoring the data of recipes in the array instead of it being empty again
+const storedRecipes = localStorage.getItem('recipes');
+recipes = JSON.parse(storedRecipes);
 
 //adds the ingredients to the list
 function addIngredientToList(){
@@ -31,7 +34,7 @@ function showIngredients(){
         <li>
         ${ingredient}
         <button onclick="removeIngredient(${index})">❌</button>
-        <li>`;
+        </li>`;
     });
 }
 
@@ -41,7 +44,7 @@ function removeIngredient(index){
     showIngredients();
 }
 
-//it submit recipie name and all ingredients and store them in recipies
+//it submit recipe name and all ingredients and store them in recipes
 function submitting(){
     let recipeName = document.getElementById("recipeName");
     let nameDiv = document.getElementById("nameDiv");
@@ -56,7 +59,7 @@ function submitting(){
         let ingredients = document.getElementById("ingredients list");
 
         ingredients.innerHTML = "";
-        let recipie = {
+        let recipe = {
             name: recipeName.value,
             ingredients: ingredientsList
         }
@@ -64,7 +67,7 @@ function submitting(){
         recipeName.value = "";
         ingredientsList = [];
 
-        recipes.push(recipie);
+        recipes.push(recipe);
         localStorage.setItem("recipes", JSON.stringify(recipes));
     }
     saveRecipes();
